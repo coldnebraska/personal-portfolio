@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(190, 190, 190);
+}
+
+header {
+    display: inline;
+}
+
+h1 {
+    display: inline;
+    max-width: fit-content;
+    margin: 0px;
+}
+
+nav {
+    display: inline;
+    float: right;
+    margin: 0%;
+}
+
+ul {
+    display: inline;
+    list-style-type: none;
+    max-width: fit-content;
+    margin: 0%;
+}
+
+li {
+    display: inline;
+}

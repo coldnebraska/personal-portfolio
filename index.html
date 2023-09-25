@@ -3,6 +3,7 @@
 
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/style.css">
         <title>My Portfolio</title>
     </head>
@@ -12,21 +13,55 @@
             <h1>David Brush</h1>
             <nav>
                 <ul>
-                    <li>About Me</li>
-                    <li>Work</li>
-                    <li>Contact Me</li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
                     <li>Resume</li>
                 </ul>
             </nav>
+            <p>Subtitle goes here</p>
         </header>
 
-        <div>
-
+        <div class="columns">
+            <div class="about-me">
+                <div class="header">
+                    <h2>About Me</h2>
+                </div>
+                <div class="about-content">
+                    <p></p>
+                </div>
+            </div>
+            
+            <div class="work">
+                <div class="header">
+                    <h2>Work</h2>
+                </div>
+                <div class="work-content">
+                    <img src="./assets/images/notebooks.png">
+                    <div class="work-img">
+                        <img src="./assets/images/css.png">
+                        <img src="./assets/images/advanced-css.png">
+                        <img src="./assets/images/placeholder.png">
+                        <img src="./assets/images/placeholder.png">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-me">
+                <div class="header">
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="contact-content">
+                    <ul>
+                        <li>512-994-7908</li>
+                        <li><a href="mailto: brush.david99@gmail.com" target="_blank">brush.david99@gmail.com</a></li>
+                        <li><a href="https://github.com/coldnebraska" target="_blank">Github</a></li>
+                        <li><a href="https://www.instagram.com/txbornneheart/" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <footer>
-
-        </footer>
     </body>
 
 </html>

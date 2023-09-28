@@ -13,16 +13,16 @@
             <h1>David Brush</h1>
             <nav>
                 <ul>
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#contact-me">Contact Me</a></li>
+                    <li id="linked"><a href="#about-me">About Me</a></li>
+                    <li id="linked"><a href="#work">Work</a></li>
+                    <li id="linked"><a href="#contact-me">Contact Me</a></li>
                     <li>Resume</li>
                 </ul>
             </nav>
         </header>
 
         <div class="columns">
-            <div class="about-me">
+            <div id="about-me">
                 <div class="header">
                     <h2>About Me</h2>
                 </div>
@@ -31,39 +31,75 @@
                 </div>
             </div>
             
-            <div class="work">
+            <div id="work">
                 <div class="header">
                     <h2>Work</h2>
                 </div>
                 <div class="work-content">
                     <div class="work-img">
-                        <div class="large-img">
-                            <img src="./assets/images/notebooks.png">
-                            <div class="img-text">
-                                <h3>Study Guide</h3>
-                                <p>HTML/CSS</p>
+                        <div class="img-border">
+                            <div class="large-img">
+                                <a href="https://coldnebraska.github.io/Prework-Study-Guide/" target="_blank">
+                                    <img src="./assets/images/notebooks.png">
+                                </a>
+                                <div class="img-text">
+                                    <h3>Study Guide</h3>
+                                    <p>HTML/CSS</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="small-img">
-                            <img src="./assets/images/css.png">
-                            <img src="./assets/images/advanced-css.png">
-                            <img src="./assets/images/placeholder.png">
-                            <img src="./assets/images/placeholder.png">
+                        <div class="small-img-border">
+                            <div class="small-img" id="left-img">
+                                <a href="https://coldnebraska.github.io/css-test-page/" target="_blank">
+                                    <img src="./assets/images/css.png">
+                                </a>
+                                <div class="img-text">
+                                    <h3>Basic HTML/CSS</h3>
+                                    <p>HTML/CSS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-img-border">
+                            <div class="small-img" id="right-img">
+                                <img src="./assets/images/advanced-css.png">
+                                <div class="img-text">
+                                    <h3>Advanced HTML/CSS</h3>
+                                    <p>HTML/CSS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-img-border">
+                            <div class="small-img" id="left-img">
+                                <img src="./assets/images/placeholder.png">
+                                <div class="img-text">
+                                    <h3>Placeholder</h3>
+                                    <!-- <p></p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-img-border">
+                            <div class="small-img" id="right-img">
+                                <img src="./assets/images/placeholder.png">
+                                <div class="img-text">
+                                    <h3>Placeholder</h3>
+                                    <!-- <p></p> -->
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="contact-me">
+            <div id="contact-me">
                 <div class="header">
                     <h2>Contact Me</h2>
                 </div>
                 <div class="contact-content">
                     <ul>
                         <li>512-994-7908</li>
-                        <li><a href="mailto: brush.david99@gmail.com" target="_blank">brush.david99@gmail.com</a></li>
-                        <li><a href="https://github.com/coldnebraska" target="_blank">Github</a></li>
-                        <li><a href="https://www.instagram.com/txbornneheart/" target="_blank">Instagram</a></li>
+                        <li id="linked"><a href="mailto: brush.david99@gmail.com" target="_blank">brush.david99@gmail.com</a></li>
+                        <li id="linked"><a href="https://github.com/coldnebraska" target="_blank">Github</a></li>
+                        <li id="linked"><a href="https://www.instagram.com/txbornneheart/" target="_blank">Instagram</a></li>
                     </ul>
                 </div>
             </div>

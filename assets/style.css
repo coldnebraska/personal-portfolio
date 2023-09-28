@@ -22,7 +22,6 @@ li {
 }
 
 img {
-    border: 10px #AA3939 solid;
     min-width: 300px;
     opacity: .5;
     transition: .5s ease;
@@ -30,6 +29,11 @@ img {
 
 img:hover {
     opacity: 1;
+}
+
+#linked:hover {
+    border-bottom: 0;
+    transition: .5s ease;
 }
 
 /* Heading tags */
@@ -69,6 +73,17 @@ nav a {
     color: lightgray;
 }
 
+.img-border {
+    border: #AA3939 solid 10px;
+    width: 93%;
+}
+
+.small-img-border {
+    border: #AA3939 solid 10px;
+    width: 45%;
+    margin-top: 20px;
+}
+
 /* Main content */
 .columns {
     display: flex;
@@ -77,14 +92,14 @@ nav a {
 }
 
 /* About Me section */
-.about-me {
+#about-me {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 15px 0;
 }
 
-.about-me p {
+#about-me p {
     font-size: 20px;
     color: grey;
     margin-left: 15px;
@@ -97,10 +112,9 @@ nav a {
 }
 
 /* Work section */
-.work {
+#work {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin: 15px 0;
     width: 100%;
 }
@@ -113,27 +127,31 @@ nav a {
 }
 
 .work-content img {
-    max-width: 100%;
-    margin-left: 12px;
+    width: 100%;
 }
 
 .work-img {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .large-img {
     position: relative;
-    width: 100%;
+    margin-bottom: -4px;
 }
 
-.small-img img {
-    margin: 1%;
-    max-width: 44%;
+.large-img img {
+    max-height: 512px;
+}
+
+.small-img {
+    position: relative;
+    margin-bottom: -4px;
 }
 
 /* Contact Me section */
-.contact-me {
+#contact-me {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -188,7 +206,7 @@ nav a {
     background-color: #AA3939;
     border-radius: 0 5px 5px 0;
     bottom: 40px;
-    left: 12px;
+    left: -1px;
     padding: 0 15px;
     color: lightgrey;
 }
@@ -197,7 +215,7 @@ nav a {
 
 /* 1050px first media query */
 @media screen and (max-width: 1050px) {
-    .small-img img {
+    .small-img {
         max-width: 100%;
         width: 93%;
         height: 200px;

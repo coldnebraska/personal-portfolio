@@ -78,6 +78,7 @@ nav a {
     color: lightgray;
 }
 
+/* Pseudocode */
 .img-border {
     border: #AA3939 solid 10px;
     width: 93%;
@@ -105,15 +106,25 @@ nav a {
 }
 
 #about-me p {
+    display: flex;
     font-size: 20px;
     color: grey;
-    margin-left: 15px;
+    margin: 0px;
+    margin-left: 20px;
+    align-items: center;
     line-height: 30px;
 }
 .about-content {
     display: flex;
     justify-content: center;
     width: 75%;
+}
+
+#profile-pic {
+    margin-left: 20px;
+    opacity: 1;
+    border: black solid 1px;
+    max-height: 195px;
 }
 
 /* Work section */
@@ -286,6 +297,13 @@ nav a {
 
 /* 600px */
 @media screen and (max-width: 650px) {
+    .about-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    #profile-pic{
+        max-width: 150px;
+    }
     h2 {
         font-size: 35px;
     }

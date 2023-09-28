@@ -31,7 +31,7 @@ img:hover {
 }
 
 #linked:hover {
-    border-bottom: 0;
+    border-bottom: none;
     transition: .5s ease;
 }
 
@@ -347,5 +347,36 @@ nav a {
     .small-img .img-text {
         width: fit-content;
         border-radius: 0;
+    }
+    #about-me {
+        flex-direction: column;
+    }
+    .header {
+        border-right: none;
+        border-bottom: 3px solid #801515;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+        justify-content: center;
+        width: 80%;
+    }
+    #profile-pic {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    #work {
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact-me {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-content {
+        display: flex;
+        justify-content: center;
+    }
+    .contact-content ul {
+        width: fit-content;
+        align-items: center;
     }
 }

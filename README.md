@@ -1,1 +1,17 @@
 # advanced-css-page
+
+## Description
+This project was to help me further advance my css skills and apply them to a webpage built from scratch. Starting with only a mock-up of how the webpage should turn out, I was required to build and style the webpage to meet the desired look. I applied the knowledge I learned about flexboxes, positioning, media queries, and pseudocode to achieve the desired outcome that adpats to the size of the viewers browser.
+
+## Usage
+In this webpage, the navigation links at the top of the page take you to that corresponding section ofhe webpage and the resume link redirects to my google document resume. The images in the work section open the live applicaion of those projects in a new tab. The contact me links all redirect to my respective accounts on those websites and the email will open an email window and set my email address as the recipient.
+
+## Screenshots
+![Alt text](./assets/images/image.png)
+![Alt text](./assets/images/image-1.png)
+
+## Application
+The link to the live application of he webpage is: https://coldnebraska.github.io/advanced-css-page/ 
+
+## Source Code
+The source code is locaed at the website https://github.com/coldnebraska/advanced-css-page 

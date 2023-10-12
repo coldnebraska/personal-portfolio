@@ -88,6 +88,7 @@ nav a {
     border: #AA3939 solid 10px;
     width: 45%;
     margin-top: 20px;
+    margin-right: 20px;
 }
 
 /* Main content */
@@ -105,19 +106,23 @@ nav a {
     margin: 15px 0;
 }
 
-#about-me p {
+.about-me-section {
     display: flex;
+    align-items: center;
+}
+
+#about-me p {
     font-size: 20px;
     color: grey;
     margin: 0px;
     margin-left: 20px;
-    align-items: center;
     line-height: 30px;
 }
 .about-content {
     display: flex;
     justify-content: center;
     width: 75%;
+    border-left: 3px solid #801515;
 }
 
 #profile-pic {
@@ -139,7 +144,8 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     margin-right: 1px;
-    width: 75%;
+    width: 79%;
+    border-left: 3px solid #801515;
 }
 
 .work-content img {
@@ -149,7 +155,8 @@ nav a {
 .work-img {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    padding: 0 20px;
 }
 
 .large-img {
@@ -166,6 +173,10 @@ nav a {
     margin-bottom: -4px;
 }
 
+.small-img img {
+    height: 250px;
+}
+
 /* Contact Me section */
 #contact-me {
     display: flex;
@@ -178,6 +189,7 @@ nav a {
     display: flex;
     align-items: center;
     width: 80%;
+    border-left: 3px solid #801515;
 }
 
 .contact-content a {
@@ -209,7 +221,6 @@ nav a {
 .header {
     display: flex;
     justify-content: flex-end;
-    border-right: 3px solid #801515;
     color: #550000;
     padding-right: 15px;
     width: 20%;
@@ -219,6 +230,11 @@ nav a {
 /* Image overlays */
 .img-text {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 170px;
+    text-align: center;
     background-color: #AA3939;
     border-radius: 0 5px 5px 0;
     top: 20px;
@@ -228,8 +244,9 @@ nav a {
     margin: 5px 0;
 }
 
-.img-text h3 {
-    margin: 7px 0;
+.img-text h3, h4 {
+    margin: 0;
+    margin-top: 7px;
 }
 
 .img-text p {
@@ -238,7 +255,7 @@ nav a {
     font-size: 75%;
 }
 
-/* Media queries */
+/* *Media queries */
 
 /* 1050px first media query */
 @media screen and (max-width: 1050px) {
@@ -295,7 +312,7 @@ nav a {
     }
 }
 
-/* 600px */
+/* 650px */
 @media screen and (max-width: 650px) {
     .about-content{
         flex-direction: column;
@@ -311,8 +328,51 @@ nav a {
         font-size: 75%;
     }
     .header {
-        width: 120px;
-        padding: 20px 15px 20px 0;
+        width: fit-content;
+        justify-content: center;
+        padding: 0;
+    }
+    #profile-pic {
+        margin: 0;
+    }
+    #about-me {
+        flex-direction: column;
+    }
+    .about-content {
+        border-left: 0;
+        padding-top: 15px;
+        border-top: 3px solid #801515;
+    }
+    .about-me-section {
+        text-align: center;
+        margin-top: 15px;
+    }
+    .para2, .para3 {
+        display: block;
+    }
+    #work {
+        flex-direction: column;
+        align-items: center;
+    }
+    .work-content {
+        border-left: none;
+        padding-top: 15px;
+        border-top: 3px solid #801515;
+    }
+    #contact-me {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-content {
+        border-left: none;
+        padding-top: 15px;
+        border-top: 3px solid #801515;
+    }
+    .contact-content ul {
+        align-items: center;
+    }
+    .small-img img {
+        height: 200px;
     }
     .contact-content ul {
         flex-direction: column;
@@ -348,11 +408,16 @@ nav a {
         width: fit-content;
         border-radius: 0;
     }
+    .small-img img {
+        height: 150px;
+    }
     #about-me {
         flex-direction: column;
     }
+    .about-content {
+        border-left: none;
+    }
     .header {
-        border-right: none;
         border-bottom: 3px solid #801515;
         padding-bottom: 0;
         margin-bottom: 20px;
@@ -367,16 +432,23 @@ nav a {
         flex-direction: column;
         align-items: center;
     }
+    .work-content {
+        border-left: none;
+    }
     #contact-me {
         flex-direction: column;
         align-items: center;
     }
     .contact-content {
+        border-left: none;
         display: flex;
         justify-content: center;
     }
     .contact-content ul {
         width: fit-content;
         align-items: center;
+    }
+    h4 {
+        font-size: 0px;
     }
 }

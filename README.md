@@ -11,7 +11,7 @@ In this webpage, the navigation links at the top of the page take you to that co
 ![Alt text](./assets/images/image-1.png)
 
 ## Application
-The link to the live application of the webpage is: https://coldnebraska.github.io/advanced-css-page/ 
+The link to the live application of the webpage is: https://coldnebraska.github.io/personal-portfolio/ 
 
 ## Source Code
-The source code is located at the website https://github.com/coldnebraska/advanced-css-page 
+The source code is located at the website https://github.com/coldnebraska/personal-portfolio 

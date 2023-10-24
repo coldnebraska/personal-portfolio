@@ -1,4 +1,4 @@
-# advanced-css-page
+# Personal Portfolio
 
 ## Description
 This project was to help me further advance my css skills and apply them to a webpage built from scratch. Starting with only a mock-up of how the webpage should look, I was required to build and style the webpage to meet that desired look. I applied the knowledge I learned about flexboxes, positioning, media queries, and pseudocode to achieve the desired outcome that adapts to the size of the viewers' browser.

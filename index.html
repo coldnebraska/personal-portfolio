@@ -4,124 +4,207 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/font-mfizz-2.4.1/font-mfizz.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
         <link rel="stylesheet" href="./assets/style.css">
         <title>My Portfolio</title>
     </head>
 
     <body>
+        <div id="top"></div>
         <header>
-            <h1>David Brush</h1>
-            <nav>
-                <ul>
-                    <li id="linked"><a href="#about-me">About Me</a></li>
-                    <li id="linked"><a href="#work">Work</a></li>
-                    <li id="linked"><a href="#contact-me">Contact Me</a></li>
-                    <li id="linked"><a href="https://docs.google.com/document/d/11ohpk-2pG1iVD0C9rDli57eVTaEz9a4VCsIExUcd3W8/edit?usp=sharing" target="_blank">Resume</a></li>
-                </ul>
-            </nav>
+            <div class="icons">
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-github"></i>
+                <i class="bi bi-file-earmark-person-fill"></i>
+            </div>
+            <a href="#top">Return to Top</a>
         </header>
 
-        <div class="columns">
-            <div id="about-me">
-                <div class="header">
-                    <h2>About Me</h2>
-                </div>
-                <div class="about-content">
-                    <img src="./assets/images/profile-pic.png" id="profile-pic">
-                    <div class="about-me-section">
-                        <p>I am a Junior Web Developer in Leander, TX and currently enrolled in the full-stack coding bootcamp at the University of Texas. 
-                            <span class="para2">I enjoy working in a team environment and helping whenever I can. I love seeing the difference my contributions make towards my team and the project.</span>
-                            <span class="para3">I work with HTML, CSS, and JavaScript</span>
-                        </p>
+        <div id="intro">
+            <h1>Hi, I'm <span>David.</span></h1>
+            <h1>I'm a front-end web developer.</h1>
+            <nav>
+                <ul>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="skew">
+            <div id="skills">
+                <h1>SKILLS</h1>
+                <div class="skills-container">
+                    <div class="front">
+                        <h2>Front-End</h2>
+                        <div class="front-skills">
+                            <div class="skill">
+                                <i class="icon-html5-alt"></i>
+                                <p>HTML</p>
+                            </div>
+    
+                            <div class="skill">
+                                <i class="icon-css3-alt"></i>
+                                <p>CSS</p>
+                            </div>
+    
+                            <div class="skill">
+                                <i class="icon-javascript-alt"></i>
+                                <p>Javascript</p>
+                            </div>
+    
+                            <div class="skill">
+                                <i class="icon-python"></i>
+                                <p>Python</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            
-            <div id="work">
-                <div class="header">
-                    <h2>Work</h2>
-                </div>
-                <div class="work-content">
-                    <div class="work-img">
-                        <div class="img-border">
-                            <div class="large-img">
-                                <a href="https://coldnebraska.github.io/code-quiz/" target="_blank">
-                                    <img src="./assets/images/javascript.jpg" alt="code on a computer screen">
-                                </a>
-                                <div class="img-text">
-                                    <h3>Advanced Javascript</h3>
-                                    <h4>HTML/CSS/JavaScript</h4>
-                                    <p>This project is a short quiz that uses javascript to change the webapge layout and store values to the browsers local storage.</p>
-                                </div>
+    
+                    <div class="back">
+                        <h2>Back-End</h2>
+                        <div class="back-skills">
+                            <div class="skill">
+                                <i class="icon-mysql-alt"></i>
+                                <p>MySQL</p>
+                            </div>
+    
+                            <div class="skill">
+                                <i class="icon-nodejs"></i>
+                                <p >Node.js (In Progress)</p>
                             </div>
                         </div>
-                        <div class="small-img-border">
-                            <div class="small-img">
-                                <a href="https://coldnebraska.github.io/Prework-Study-Guide/" target="_blank">
-                                    <img src="./assets/images/notebooks.png" alt="notebooks">
-                                </a>
-                                <div class="img-text">
-                                    <h3>UT Coding Bootcamp Notes</h3>
-                                    <h4>HTML/CSS</h4>
-                                    <p>This project is a storage place for the notes I took during the bootcamp</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="small-img-border">
-                            <div class="small-img">
-                                <a href="https://coldnebraska.github.io/css-test-page/" target="_blank">
-                                    <img src="./assets/images/css.png" alt="basic css symbol">
-                                </a>
-                                <div class="img-text">
-                                    <h3>Basic HTML/CSS</h3>
-                                    <h4>HTML/CSS</h4>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="small-img-border">
-                            <div class="small-img">
-                                <a href="" target="_blank">
-                                    <img src="./assets/images/placeholder.png" alt="placeholder image">
-                                </a>
-                                <div class="img-text">
-                                    <h3>Placeholder</h3>
-                                    <h4></h4>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="small-img-border">
-                            <div class="small-img">
-                                <a href="" target="_blank">
-                                    <img src="./assets/images/placeholder.png" alt="placeholder image">
-                                </a>
-                                <div class="img-text">
-                                    <h3>Placeholder</h3>
-                                    <h4></h4>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
-                </div>
-            </div>
-            
-            <div id="contact-me">
-                <div class="header">
-                    <h2>Contact Me</h2>
-                </div>
-                <div class="contact-content">
-                    <ul>
-                        <li id="not-linked">512-994-7908</li>
-                        <li id="linked"><a href="mailto: brush.david99@gmail.com" target="_blank">brush.david99@gmail.com</a></li>
-                        <li id="linked"><a href="https://github.com/coldnebraska" target="_blank">Github</a></li>
-                        <li id="linked"><a href="https://www.linkedin.com/in/david-brush-66089a294/" target="_blank">Linkedin</a></li>
-                    </ul>
+    
+                    <div class="tools">
+                        <h2>Frameworks/Tools</h2>
+                        <div class="tools-skills">
+                            <div class="skill">
+                                <i class="icon-git"></i>
+                                <p>Git</p>
+                            </div>
+    
+                            <div class="skill">
+                                <i class="icon-bootstrap"></i>
+                                <p>Bootstrap</p>
+                            </div>
+    
+                            <div class="skill">
+                                <i class="icon-reactjs"></i>
+                                <p>React (In Progress)</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-    </body>
+        <div id="projects">
+            <h1>PROJECTS</h1>
+            <div class="project-container">
+                <div class="project">
+                    <img src="./assets/images/placeholder.png">
+                    <div class="project-content">
+                        <h2>Project Name</h2>
+                        <div class="tools-used">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JavaScript</p>
+                        </div>
+                        <p>Project Description</p>
+                        <a>Live Demo</a>
+                        <a>Source Code</a>
+                    </div>
+                </div>
 
+                <div class="project">
+                    <div class="project-content">
+                        <h2>Project Name</h2>
+                        <div class="tools-used">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JavaScript</p>
+                        </div>
+                        <p>Project Description</p>
+                        <a>Live Demo</a>
+                        <a>Source Code</a>
+                    </div>
+                    <img src="./assets/images/placeholder.png">
+                </div>
+
+                <div class="project">
+                    <img src="./assets/images/placeholder.png">
+                    <div class="project-content">
+                        <h2>Project Name</h2>
+                        <div class="tools-used">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JavaScript</p>
+                        </div>
+                        <p>Project Description</p>
+                        <a>Live Demo</a>
+                        <a>Source Code</a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-content">
+                        <h2>Project Name</h2>
+                        <div class="tools-used">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JavaScript</p>
+                        </div>
+                        <p>Project Description</p>
+                        <a>Live Demo</a>
+                        <a>Source Code</a>
+                    </div>
+                    <img src="./assets/images/placeholder.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="skew">
+            <div id="about">
+                <h1>ABOUT</h1>
+                <div class="about-content">
+                    <img src="./assets/images/placeholder.png">
+                    <div class="about-text">
+                        <p><span id="hideText">AA</span>Currently enrolled in a Full-Stack Coding bootcamp at the University of Texas. I love learning new concepts, languages, tools, and helping my classmates.</p>
+                        <p><span id="hideText">AA</span>When I'm not coding, I'm usually tinkering with my car, playing volleyball, or playing videogames.</p>
+                        <a href="">Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <h1>CONTACT</h1>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="inputName">Name:</label>
+                        <input type="name" class="form-control" id="inputName" placeholder="Enter name">
+                        <small id="nameHelp" class="form-text text-muted">Please enter your full name.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail">Email address:</label>
+                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputMessage">Message:</label>
+                        <textarea class="form-control" id="inputMessage"></textarea>
+                    </div>
+                    <button type="submit" class="button">Send</button>
+                </form>
+            </div>
+        </div>
+    </body>
 </html>

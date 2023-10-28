@@ -1,3 +1,8 @@
+let modalBtn = $(".button")
+let modal = $(".modal")
+let close = $(".close")
+let modalId = document.getElementById("modal")
+
 const handleSubmit = (event) => {
   event.preventDefault();
 
@@ -10,11 +15,6 @@ const handleSubmit = (event) => {
     body: new URLSearchParams(formData).toString(),
   })
     .then(function() {
-        let modalBtn = $(".button")
-        let modal = $(".modal")
-        let close = $(".close")
-        let modalId = document.getElementById("modal")
-
         modalBtn.click(function() {
             modal.css("display", "block")
         })

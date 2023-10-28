@@ -14,23 +14,26 @@ const handleSubmit = (event) => {
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams(formData).toString(),
   })
-    .then(function() {
-        modalBtn.click(function() {
-            modal.css("display", "block")
-        })
-
-        close.click(function() {
-            modal.css("display", "none")
-        })
-
-        window.addEventListener("click", function(event) {
-            if (event.target === modalId) {
-                modal.css("display", "none")
-            }
-        })
-    })
     .catch((error) => alert(error));
 };
+
+function displayModal() {
+    modalBtn.click(function() {
+        modal.css("display", "block")
+    })
+
+    close.click(function() {
+        modal.css("display", "none")
+    })
+
+    window.addEventListener("click", function(event) {
+        if (event.target === modalId) {
+            modal.css("display", "none")
+        }
+    })
+}
+
+displayModal()
 
 document
   .querySelector("form")

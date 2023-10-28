@@ -1,5 +1,5 @@
 let modalBtn = $(".button")
-let modal = $(".modal")
+let modal = $("#modal")
 let close = $(".close")
 let modalId = document.getElementById("modal")
 

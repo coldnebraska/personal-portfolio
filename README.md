@@ -15,5 +15,3 @@ The link to the live application of the webpage is: https://coldnebraska.github.
 
 ## Source Code
 The source code is located at the website https://github.com/coldnebraska/personal-portfolio 
-
-![Alt text](image.png)

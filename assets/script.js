@@ -4,18 +4,20 @@ let close = $(".close")
 let modalId = document.getElementById("modal")
 
 const handleSubmit = (event) => {
-  event.preventDefault();
+    event.preventDefault()
 
-  const myForm = event.target;
-  const formData = new FormData(myForm);
-  
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
-  })
-    .catch((error) => alert(error));
-};
+    const myForm = event.target
+    const formData = new FormData(myForm)
+    console.log(myForm)
+    console.log(formData)
+
+    fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+    })
+    .catch((error) => alert(error))
+}
 
 function displayModal() {
     modalBtn.click(function() {
@@ -35,6 +37,4 @@ function displayModal() {
 
 displayModal()
 
-document
-  .querySelector("form")
-  .addEventListener("submit", handleSubmit);
+document.querySelector("form").addEventListener("submit", handleSubmit)

@@ -43,7 +43,7 @@ header a:hover {
 
 #intro {
     width: fit-content;
-    margin: 300px 0 400px 25%;
+    margin: 300px auto 400px auto;
 }
 
 #intro a:hover {
@@ -159,24 +159,25 @@ header a:hover {
     flex-direction: column;
     align-items: center;
     gap: 100px;
-    width: 60%;
+    min-width: 60%;
+    width: 70%;
     margin: auto;
 }
 
 .project {
     display: flex;
-    gap: 40px;
+    align-items: center;
+    gap: 20px;
     padding: 5px;
     border: 2px solid lightgrey;
     border-radius: 5px;
     box-shadow: 2px 2px 5px lightgrey;
 }
 
-.project img {
-    width: 450px;
-    height: 275px;
+.project-img {
     border: 1px solid lightgrey;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .project-content {
@@ -332,4 +333,132 @@ header a:hover {
 
 .modal-content p {
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 1180px) {
+    .project-content {
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .project {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        margin: 0 ;
+    }
+    .icons i {
+        font-size: 24px;
+    }
+    header a {
+        font-size: 12px;
+    }
+    #intro {
+        margin-top: 150px;
+        margin-bottom: 210px;
+    }
+    #intro h1 {
+        font-size: 40px;
+    }
+    #intro a {
+        font-size: 12px;
+    }
+    #skills {
+        padding: 100px 0;
+    }
+    #projects {
+        padding: 50px 0 140px 0;
+    }
+    .project {
+        flex-direction: column;
+    }
+    .project-container {
+        width: 80%;
+        margin: auto;
+    }
+    #about {
+        padding: 100px 0;
+    }
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        width: 75%;
+        margin: auto;
+    }
+    .about-content img {
+        width: 100%;
+    }
+    .about-text {
+        font-size: 12px;
+        width: 100%;
+    }
+    .about-text a {
+        margin: auto;
+    }
+    .form-group label, .form-group input, .form-group textarea, .button{
+        font-size: 12px;
+    }
+    .form-group small {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #intro {
+        padding: 0 20px;
+    }
+    #intro h1 {
+        font-size: 35px;
+    }
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .front {
+        width: 100%;
+    }
+    .back {
+        width: 100%;
+    }
+    .back-skills {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .tools {
+        width: 100%;
+    }
+    .tools-skills {
+        justify-content: center;
+    }
+    .skill {
+        width: 25%;
+    }
+    .project-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #intro h1 {
+        font-size: 28px;
+    }
+    .project {
+        border: none;
+    }
+    .project-content {
+        align-items: center;
+    }
+    #about {
+        padding: 100px 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .about-content {
+        width: 95%;
+    }
 }
